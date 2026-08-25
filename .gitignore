@@ -1,0 +1,25 @@
+.DS_Store
+.idea/
+.vscode/
+
+# Rust build outputs
+target/
+
+# Python local files
+__pycache__/
+.venv/
+venv/
+*.pyc
+
+# Local/generated credentials
+.env
+credentials.txt
+client_credentials.txt
+
+# Heavy binary artifacts kept out of normal Git history
+*.MOV
+*.mov
+*.mp4
+*.zip
+*.pcap
+attempts-large.txt

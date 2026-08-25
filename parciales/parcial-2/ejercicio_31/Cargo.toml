@@ -1,0 +1,10 @@
+[package]
+name = "ejercicio_31"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+assert_cmd = "2.0.16"
+colored = "2.1.0"
+pcap = "2.2.0"
+pnet = "0.35.0"

@@ -1,0 +1,16 @@
+#Reimportar librerías después del reinicio del estado
+import 	sympy as sp
+
+#Definir la variable
+		d = sp.Symbol('d', positive = True, real = True)
+
+#Definir la ecuación
+ecuacion = (2578.31 / d) == (1.19 / sp.sqrt((d ^ 2 / 4) + (4 * 10 * *10)))
+
+#Resolver la ecuación
+solucion = sp.solve(ecuacion, d)
+
+#Filtrar soluciones reales y positivas
+solucion_real =[s.evalf() for s in solucion if s.is_real and s > 0]
+
+#Mostrar resultado

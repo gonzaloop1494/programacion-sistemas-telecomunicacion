@@ -1,0 +1,8 @@
+stages:
+  - test
+
+rust-test:
+  stage: test
+  image: rust:latest
+  script:
+    - cargo test

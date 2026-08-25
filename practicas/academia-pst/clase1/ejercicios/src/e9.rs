@@ -1,0 +1,29 @@
+fn foo_if_fizz(fizzish: &str) -> &str {
+    if fizzish == "fizz" {
+        "foo"
+    } else if fizzish == "fuzz"{
+        "bar"
+    } else {
+        "baz"
+    }
+}
+
+//////////////////////////////////////
+//
+// NO MODIFIQUES LOS SIGUIENTES TESTS
+//
+#[test]
+fn foo_for_fizz() {
+    // This means that calling `foo_if_fizz` with the argument "fizz" should return "foo".
+    assert_eq!(foo_if_fizz("fizz"), "foo");
+}
+
+#[test]
+fn bar_for_fuzz() {
+    assert_eq!(foo_if_fizz("fuzz"), "bar");
+}
+
+#[test]
+fn default_to_baz() {
+    assert_eq!(foo_if_fizz("literally anything"), "baz");
+}
